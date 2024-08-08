@@ -7,7 +7,7 @@ const Home = () => {
       <div className="text-center">
         <p className="text-[22px] font-bold">Experiment by Prashant</p>
         <p className="text-[15px]">
-          The wesbite is under development. Compoments are not responsive to mobile devices.
+          The website is under development. Components are not responsive to mobile devices.
         </p>
         <p className="mt-4">
           <p>meanwhile you can check out these</p>
