@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 // Framer Motion
 import { AnimatePresence, motion } from 'framer-motion';
@@ -9,23 +9,25 @@ import { AnimatePresence, motion } from 'framer-motion';
 // Icons
 import { CheckIcon, CloseIcon, DeleteIcon, DownloadIcon } from '@/icons';
 
+// Assets
+import { bag, ticket, flowerpot, toy } from '@/public';
+import Link from 'next/link';
+
 // Card Data Type
 type CardDataProps = {
   title: string;
-  imageUrl: string;
+  imageUrl: StaticImageData;
 };
 
 // Card Data
-
 const cardData: CardDataProps[] = [
-  { title: 'Bag', imageUrl: 'https://i.ibb.co/0Gjmjpx/pngtree-handdrawing-school-backpack-png-image-6136819.png' },
-  { title: 'Ticket', imageUrl: 'https://i.ibb.co/vZL6fbJ/pngtree-golden-ticket-png-image-6621563.png' },
+  { title: 'Bag', imageUrl: bag },
+  { title: 'Ticket', imageUrl: ticket },
   {
     title: 'FlowerPot',
-    imageUrl:
-      'https://i.ibb.co/MG7Fpww/c-HJpdm-F0-ZS9sci9pb-WFn-ZXMvd2-Vic2l0-ZS8y-MDIy-LTA2-L2-Zy-Zmxvd2-Vy-X2dlcm-Fua-XVt-X3-Bvd-F9y-ZWQt.png',
+    imageUrl: flowerpot,
   },
-  { title: 'Toy', imageUrl: 'https://i.ibb.co/nBB2bQs/egg-driving-green-vehicle-1156-400-1.png' },
+  { title: 'Toy', imageUrl: toy },
 ];
 
 /**
@@ -64,14 +66,6 @@ export const DownloadAnimationPage = () => {
   /**
    * Handles the downloading process. It sets isDownloading to true, and then sets isDownloadComplete to true after 6000 milliseconds.
    */
-  // const handleDownloading = () => {
-  //   setIsDownloading(true);
-  //   setTimeout(() => {
-  //     setIsDownloading(false);
-  //     setSelectedCards([]);
-  //   }, 6000);
-  // };
-
   const handleDownloading = () => {
     setIsDownloading(true);
     setTimeout(() => {
@@ -85,7 +79,16 @@ export const DownloadAnimationPage = () => {
   };
 
   return (
-    <div className="flex min-h-screen w-full select-none items-center justify-center bg-white dark:bg-[#121212]">
+    <div className="relative flex h-screen w-full select-none items-center justify-center bg-white dark:bg-[#121212]">
+      <div className="absolute bottom-5 left-[50%] -translate-x-1/2 text-center">
+        <p className="font-medium">
+          Inspired by{' '}
+          <Link href="https://x.com/zzerou_" target="_blank" className="text-blue-600">
+            @zzerou_
+          </Link>{' '}
+          on X (twitter)
+        </p>
+      </div>
       <div>
         <div className="flex w-[280px] flex-wrap justify-center gap-2">
           {cardData.map((card, index) => (

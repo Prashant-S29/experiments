@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { useTheme,  } from 'next-themes';
+import { useTheme } from 'next-themes';
 
 export const ThemeToggler = () => {
   const { theme, setTheme } = useTheme();
@@ -15,7 +15,7 @@ export const ThemeToggler = () => {
     <div className="absolute bottom-0 right-0 m-3">
       <button
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-        className="flex size-[30px] items-center justify-center gap-2 rounded-full  text-sm font-medium text-black dark:text-white"
+        className="flex size-[30px] items-center justify-center gap-2 rounded-full text-sm font-medium text-black dark:text-white"
       >
         {theme === 'dark' ? (
           <svg
