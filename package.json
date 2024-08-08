@@ -10,6 +10,7 @@
     "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
   },
   "dependencies": {
+    "experiments-by-prashant": "file:",
     "framer-motion": "^11.3.8",
     "next": "14.2.5",
     "next-themes": "^0.3.0",

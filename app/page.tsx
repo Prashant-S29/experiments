@@ -4,13 +4,17 @@ import React from 'react';
 const Home = () => {
   return (
     <div className="flex min-h-screen w-full items-center justify-center">
-      <div>
-        <div>
-          <span>Home Page</span>
-        </div>
-        <div>
-          <Link href="/experiments">Experiments</Link>
-        </div>
+      <div className="text-center">
+        <p className="text-[22px] font-bold">Experiment by Prashant</p>
+        <p className="text-[15px]">
+          The wesbite is under development. Compoments are not responsive to mobile devices.
+        </p>
+        <p className="mt-4">
+          <p>meanwhile you can check out these</p>
+          <Link href="/experiments" className="font-semibold text-blue-700 underline underline-offset-2">
+            Explore Experiments (2)
+          </Link>
+        </p>
       </div>
     </div>
   );
