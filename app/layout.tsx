@@ -6,7 +6,7 @@ import Providers from '@/utils/Providers';
 
 // Fonts
 import { montserrat } from '@/fonts';
-import { ThemeToggler } from '@/components/comman';
+import { ThemeToggler } from '@/components/common';
 
 // Metadata
 export const metadata: Metadata = {
