@@ -21,6 +21,14 @@ export const ExperimentsPage = () => {
             Dynamic Layout
           </Link>
         </p>
+        <p>
+          <Link
+            href="/experiments/dribbble-like-navigation/following"
+            className="text-black underline-offset-2 hover:underline dark:text-white"
+          >
+            Dribbble Like Navigation
+          </Link>
+        </p>
       </div>
     </div>
   );
