@@ -12,7 +12,7 @@ export const ThemeToggler = () => {
   }, []);
 
   return mounted ? (
-    <div className="absolute bottom-0 right-0 m-3">
+    <div className="fixed bottom-0 right-0 z-[70] m-3">
       <button
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         className="flex size-[30px] items-center justify-center gap-2 rounded-full text-sm font-medium text-black dark:text-white"
