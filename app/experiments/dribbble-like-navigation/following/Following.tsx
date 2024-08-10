@@ -4,6 +4,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { CloseIcon } from '@/icons';
 import useKeyBinder from '@/hooks/useKeyBinder';
+import { Metadata } from 'next';
 
 // Define the type for the props
 interface ShotModalProps {
@@ -20,7 +21,7 @@ interface ShotModalProps {
  * @param {ShotModalProps} props - The props for the ShotModal component.
  * @returns {JSX.Element} The rendered ShotModal component.
  */
-const ShotModal: React.FC<ShotModalProps> = ({ shotId, handleClose }) => {
+const ShotModal: React.FC<ShotModalProps> = ({ shotId, handleClose }: ShotModalProps): JSX.Element => {
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
@@ -34,6 +35,7 @@ const ShotModal: React.FC<ShotModalProps> = ({ shotId, handleClose }) => {
       try {
         // Simulate API call with a delay
         await new Promise((resolve) => setTimeout(resolve, 3000));
+
         // replace with actual API call:
         // const data = await fetch(`/api/shots/${shotId}`)
       } finally {
@@ -54,7 +56,7 @@ const ShotModal: React.FC<ShotModalProps> = ({ shotId, handleClose }) => {
             <div className="h-16 w-16 animate-spin rounded-full border-b-2 border-t-2 border-gray-300" />
           </div>
         ) : (
-          <p className='text-black' >Shot {shotId}</p>
+          <p className="text-black">Shot {shotId}</p>
         )}
       </div>
     </div>
