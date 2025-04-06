@@ -7,6 +7,7 @@ export const ExperimentsPage = () => {
       <div className="text-center">
         <p>
           <Link
+            prefetch
             href="/experiments/download-animation"
             className="text-black underline-offset-2 hover:underline dark:text-white"
           >
@@ -15,6 +16,7 @@ export const ExperimentsPage = () => {
         </p>
         <p>
           <Link
+            prefetch
             href="/experiments/dynamic-layout"
             className="text-black underline-offset-2 hover:underline dark:text-white"
           >
@@ -23,10 +25,20 @@ export const ExperimentsPage = () => {
         </p>
         <p>
           <Link
+            prefetch
             href="/experiments/dribbble-like-navigation/following"
             className="text-black underline-offset-2 hover:underline dark:text-white"
           >
             Dribbble Like Navigation
+          </Link>
+        </p>
+        <p>
+          <Link
+            prefetch
+            href="/experiments/david_wip"
+            className="text-black underline-offset-2 hover:underline dark:text-white"
+          >
+            David Visuals Hero Section
           </Link>
         </p>
       </div>

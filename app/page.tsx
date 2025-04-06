@@ -10,9 +10,10 @@ const Home = () => {
           The website is under development. Components are not responsive to mobile devices.
         </p>
         <p className="mt-4">
-          <span>meanwhile you can check out these</span><br/>
+          <span>meanwhile you can check out these</span>
+          <br />
           <Link href="/experiments" className="font-semibold text-blue-700 underline underline-offset-2">
-            Explore Experiments (3)
+            Explore Experiments (4)
           </Link>
         </p>
       </div>

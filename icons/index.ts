@@ -9,4 +9,7 @@ import { FaCode as ComponentsIcon } from 'react-icons/fa';
 import { FaClapperboard as AppIcon } from 'react-icons/fa6';
 import { LuPaperclip as NotesIcon } from 'react-icons/lu';
 
-export { CheckIcon, CloseIcon, DownloadIcon, DeleteIcon, ComponentsIcon, AppIcon, NotesIcon };
+// David WIP
+import { IoChevronDownOutline as DropdownIcon } from 'react-icons/io5';
+
+export { CheckIcon, CloseIcon, DownloadIcon, DeleteIcon, ComponentsIcon, AppIcon, NotesIcon, DropdownIcon };

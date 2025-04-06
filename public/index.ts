@@ -5,4 +5,9 @@ import ticket from './ticket.png';
 import flowerpot from './folwerPot.png';
 import toy from './toy.png';
 
-export { bag, ticket, flowerpot, toy };
+import line from './line.svg';
+import moneyIcon from './moneyIcon.png';
+import calenderIcon from './calenderIcon.png';
+import underline from './underline.svg';
+
+export { bag, ticket, flowerpot, toy, line, moneyIcon, calenderIcon, underline };
