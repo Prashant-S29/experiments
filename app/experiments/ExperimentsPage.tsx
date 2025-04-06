@@ -29,6 +29,11 @@ export const ExperimentsPage = () => {
             Dribbble Like Navigation
           </Link>
         </p>
+        <p>
+          <Link href="/experiments/david_wip" className="text-black underline-offset-2 hover:underline dark:text-white">
+            David Visuals Hero Section
+          </Link>
+        </p>
       </div>
     </div>
   );
