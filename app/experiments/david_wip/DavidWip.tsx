@@ -87,7 +87,7 @@ export const DavidWip = () => {
         </section>
       </main>
 
-      {/* <div className="absolute bottom-5 left-1/2 flex -translate-x-1/2 text-xs flex-col items-center">
+      <div className="bottom-1 left-1/2 flex flex-col items-center justify-center py-8 text-xs">
         <p className="font-medium">
           Inspired by{' '}
           <Link href="https://x.com/David_Visuals_" target="_blank" className="text-blue-600">
@@ -95,7 +95,7 @@ export const DavidWip = () => {
           </Link>{' '}
           on X (twitter)
         </p>
-      </div> */}
+      </div>
     </>
   );
 };
