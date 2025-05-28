@@ -41,6 +41,16 @@ export const ExperimentsPage = () => {
             David Visuals Hero Section
           </Link>
         </p>
+
+        <p>
+          <Link
+            prefetch
+            href="/experiments/glass-layers-with-dynamic-rotation"
+            className="text-black underline-offset-2 hover:underline dark:text-white"
+          >
+            Glass layers with dynamic rotation
+          </Link>
+        </p>
       </div>
     </div>
   );

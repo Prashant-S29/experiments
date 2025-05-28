@@ -8,5 +8,11 @@ const config: Config = {
   ],
   darkMode: 'class',
   plugins: [],
+  extend: {
+    rotate: {
+      'y-180': '180deg',
+    },
+    transform: ['group-hover'],
+  },
 };
 export default config;
