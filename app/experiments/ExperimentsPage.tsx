@@ -41,6 +41,16 @@ export const ExperimentsPage = () => {
             David Visuals Hero Section
           </Link>
         </p>
+
+        <p>
+          <Link
+            prefetch
+            href="/experiments/stroke_animation"
+            className="text-black underline-offset-2 hover:underline dark:text-white"
+          >
+            Text Stroke Animation
+          </Link>
+        </p>
       </div>
     </div>
   );

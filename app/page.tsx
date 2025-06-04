@@ -13,7 +13,7 @@ const Home = () => {
           <span>meanwhile you can check out these</span>
           <br />
           <Link href="/experiments" className="font-semibold text-blue-700 underline underline-offset-2">
-            Explore Experiments (4)
+            Explore Experiments (5p)
           </Link>
         </p>
       </div>
