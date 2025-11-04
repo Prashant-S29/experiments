@@ -51,6 +51,16 @@ export const ExperimentsPage = () => {
             Text Stroke Animation
           </Link>
         </p>
+
+        <p>
+          <Link
+            prefetch
+            href="/experiments/button_with_eyes"
+            className="text-black underline-offset-2 hover:underline dark:text-white"
+          >
+            Button with Eyes
+          </Link>
+        </p>
       </div>
     </div>
   );

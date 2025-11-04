@@ -5,7 +5,7 @@ import './globals.css';
 import Providers from '@/utils/Providers';
 
 // Fonts
-import { montserrat } from '@/fonts';
+// import { montserrat } from '@/fonts';
 import { ThemeToggler } from '@/components/common';
 
 // Metadata
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body>
         <Providers>
           {/* <ThemeToggler /> */}
           {children}

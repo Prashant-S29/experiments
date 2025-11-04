@@ -2,9 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 
 // fonts
-import { inter } from '@/fonts';
-
-// icons
 import { DropdownIcon } from '@/icons';
 import Image from 'next/image';
 import { calenderIcon, line, moneyIcon, underline } from '@/public';
@@ -13,7 +10,7 @@ import { garamond } from '@/fonts/local';
 export const DavidWip = () => {
   return (
     <>
-      <main className={`relative h-screen w-full bg-[#F5EEE2] ${inter.className}`}>
+      <main className={`relative h-screen w-full bg-[#F5EEE2]`}>
         <Header />
         <LineDesign position="left" />
         <LineDesign position="right" />
@@ -137,7 +134,7 @@ const LineDesign = ({ position }: { position: 'left' | 'right' }) => {
 
 const Header = () => {
   return (
-    <header className={`absolute top-0 h-[70px] w-full bg-[#f0e9de] px-[70px] py-4 ${inter.className}`}>
+    <header className={`absolute top-0 h-[70px] w-full bg-[#f0e9de] px-[70px] py-4`}>
       <nav className="flex w-full items-center justify-between">
         <ul className="flex items-center gap-8">
           {NavData.map((item, index) => (

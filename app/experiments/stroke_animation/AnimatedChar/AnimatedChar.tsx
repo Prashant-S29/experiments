@@ -1,7 +1,6 @@
 // @ts-nocheck minor ts errors
 'use client';
 
-import { instrumentSerif } from '@/fonts';
 import { useSpring, useTransform } from 'framer-motion';
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
@@ -166,7 +165,7 @@ export const AnimatedChar: React.FC<AnimatedCharProps> = ({ char, mouseX, spring
   return (
     <motion.span
       ref={charRef}
-      className={`inline-block cursor-none text-[200px] font-extralight leading-none text-white mix-blend-difference ${instrumentSerif.className}`}
+      className={`inline-block cursor-default text-[200px] font-extralight leading-none text-white mix-blend-difference `}
       style={{
         WebkitTextStroke: useTransform(strokeWidth, (value) => `${value}em currentcolor`),
         paddingLeft: useTransform(paddingX, (value) => `${value}em`),
